@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>art-Template</h1>
+    <!-- 绑定数据 -->
+    <h1>{{name}}</h1>
+    <!-- html数据 -->
+    <h1>{{@htmlData}}</h1>
+    <!-- 条件 -->
+    <h1>{{if num >= 24}}大于{{else}}小于{{/if}}</h1>
+    <!-- 循环 -->
+    <ul>
+        {{each list}}
+            <li>{{$index}}-----{{$value}}</li>
+        {{/each}}
+    </ul>
+    <!-- 引入模板 -->
+    {{include 'public/footer.html'}}
+</body>
+</html>
