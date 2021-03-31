@@ -1,7 +1,7 @@
 const Koa = require('koa')
 const router = require('koa-router')()
 const bodyParser = require('koa-bodyparser') //post请求获取路由参数
-const app = new Koa()
+const app = new Koa() 
 
 app.use(bodyParser())
 
@@ -17,6 +17,10 @@ router.get('/home', async (ctx, next) => {
 router.get('/404', async (ctx, next) => {
     ctx.response.body = '<h1>404 Not Found</h1>'
 })
+
+// router.get('/404', async (ctx, next) => {
+//     ctx.response.body = '<h1>404 Not Found</h1>'
+// })
 
 
 //读取get传值
